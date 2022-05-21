@@ -1,0 +1,10 @@
+.logo-container {
+    margin: 0 auto;
+    position: relative;
+
+    &__logo {
+        @include absCenter;
+
+    }
+ 
+}
