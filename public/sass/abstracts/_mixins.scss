@@ -12,3 +12,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin responsive-width {
+        @media (min-width: $screen-width-more-1920) { width: 1200px}
+        @media (max-width: $screen-width1920) { width: 1200px}
+        @media (max-width: $screen-width1536) { width: 1200px}
+        @media (max-width: $screen-width1440) { width: 1200px}
+        @media (max-width: $screen-width1366) { width: 1000px}
+        /* @media (max-width: $screen-width1080) { width: calc($screen-width1080 - 50px)}
+        @media (max-width: $screen-width768) { width: calc($screen-width768 - 50px)}
+        @media (max-width: $screen-width640) { width: calc($screen-width640 - 50px)}
+        @media (max-width: $screen-width414) { width: calc($screen-width414 - 50px)}
+        @media (max-width: $screen-width393) { width: calc($screen-width393 - 50px)}
+        @media (max-width: $screen-width360) { width: calc($screen-width360 - 50px)} */
+        @media (max-width: $screen-width1080) { width: 700px}
+        @media (max-width: $screen-width768) { width: 600px}
+        @media (max-width: $screen-width640) { width: 400px}
+        @media (max-width: $screen-width414) { width: 380px}
+        @media (max-width: $screen-width393) { width: 380px}
+        @media (max-width: $screen-width360) { width: 350px}
+}
+
+/* @mixin responsive-text {
+
+} */

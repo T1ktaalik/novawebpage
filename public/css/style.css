@@ -1,15 +1,55 @@
+/* @mixin responsive-text {
+
+} */
 .main-section {
   background-image: linear-gradient(to right, rgba(234, 231, 220, 0.85), rgba(234, 231, 220, 0.85)), url(../img/pano_plant_2.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  /* width: 100vh; */ }
+  /*    max-width: 100%; */
+  height: 100vh; }
   .main-section__content {
-    width: 120rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    /* @media (max-width: $screen-width1080) { width: calc($screen-width1080 - 50px)}
+        @media (max-width: $screen-width768) { width: calc($screen-width768 - 50px)}
+        @media (max-width: $screen-width640) { width: calc($screen-width640 - 50px)}
+        @media (max-width: $screen-width414) { width: calc($screen-width414 - 50px)}
+        @media (max-width: $screen-width393) { width: calc($screen-width393 - 50px)}
+        @media (max-width: $screen-width360) { width: calc($screen-width360 - 50px)} */ }
+    @media (min-width: 1920px) {
+      .main-section__content {
+        width: 1200px; } }
+    @media (max-width: 1920px) {
+      .main-section__content {
+        width: 1200px; } }
+    @media (max-width: 1536px) {
+      .main-section__content {
+        width: 1200px; } }
+    @media (max-width: 1440px) {
+      .main-section__content {
+        width: 1200px; } }
+    @media (max-width: 1366px) {
+      .main-section__content {
+        width: 1000px; } }
+    @media (max-width: 1080px) {
+      .main-section__content {
+        width: 700px; } }
+    @media (max-width: 768px) {
+      .main-section__content {
+        width: 600px; } }
+    @media (max-width: 640px) {
+      .main-section__content {
+        width: 400px; } }
+    @media (max-width: 414px) {
+      .main-section__content {
+        width: 380px; } }
+    @media (max-width: 393px) {
+      .main-section__content {
+        width: 380px; } }
+    @media (max-width: 360px) {
+      .main-section__content {
+        width: 350px; } }
   .main-section__para {
-    box-sizing: content-box;
-    position: relative; }
+    box-sizing: content-box; }
 
 /* Add the following CSS block to your own
 stylesheet. 
@@ -42,12 +82,14 @@ https://linearicons.com/free
     font-family: sans-serif;
     color: $color-china-red;
   } */
-.logo {
+.logo-container {
   margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  position: relative; }
+  .logo-container__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 *,
 *::after,
