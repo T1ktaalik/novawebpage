@@ -13,26 +13,35 @@
     transform: translate(-50%, -50%);
 }
 
-@mixin responsive-width {
-        @media (min-width: $screen-width-more-1920) { width: 1200px}
-        @media (max-width: $screen-width1920) { width: 1200px}
-        @media (max-width: $screen-width1536) { width: 1200px}
-        @media (max-width: $screen-width1440) { width: 1200px}
-        @media (max-width: $screen-width1366) { width: 1000px}
-        /* @media (max-width: $screen-width1080) { width: calc($screen-width1080 - 50px)}
-        @media (max-width: $screen-width768) { width: calc($screen-width768 - 50px)}
-        @media (max-width: $screen-width640) { width: calc($screen-width640 - 50px)}
-        @media (max-width: $screen-width414) { width: calc($screen-width414 - 50px)}
-        @media (max-width: $screen-width393) { width: calc($screen-width393 - 50px)}
-        @media (max-width: $screen-width360) { width: calc($screen-width360 - 50px)} */
-        @media (max-width: $screen-width1080) { width: 700px}
-        @media (max-width: $screen-width768) { width: 600px}
-        @media (max-width: $screen-width640) { width: 400px}
-        @media (max-width: $screen-width414) { width: 380px}
-        @media (max-width: $screen-width393) { width: 380px}
-        @media (max-width: $screen-width360) { width: 350px}
+//breakpoints
+/* Breakpoint	Class infix	Dimensions
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
+
+@mixin res-width($bp) {
+
+    @if $bp == $bp-320 {
+        @media (max-width: 320px) {@content};
+    };
+    @if $bp == $bp-576 {
+        @media (max-width: 576px) {@content};
+    };
+    @if $bp == $bp-768 {
+        @media (max-width: 768px) {@content};
+    };
+    @if $bp == $bp-992 {
+        @media (max-width: 992px) {@content};
+    };
+    @if $bp == $bp-1200 {
+        @media (max-width: 1200px) {@content};
+        @media (min-width: 1200px) {@content};
+    };
+    /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+
 }
-
-/* @mixin responsive-text {
-
-} */

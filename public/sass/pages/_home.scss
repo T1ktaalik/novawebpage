@@ -7,13 +7,36 @@
    
     
         &__content {
-        //width: 120rem;
+        /* width: 120rem; */
         margin: 0 auto;
-        @include responsive-width
+      
+       
+       
+        @include res-width($bp-1200) {
+            width: 900px;
+        };
+        @include res-width($bp-992) {
+            width: 700px;
+        };
+        @include res-width($bp-768) {
+            width: 500px;
+        };
+        @include res-width($bp-576) {
+            width: 500px;
+        };
+        @include res-width($bp-576) {
+            width: 350px;
+        };
+        @include res-width($bp-320) {
+            width: 300px;
+        };
+        
     }
+    
     
     &__para {
         box-sizing: content-box;
+        width: 100%;
    
     }
 

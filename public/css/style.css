@@ -1,6 +1,19 @@
-/* @mixin responsive-text {
-
-} */
+@charset "UTF-8";
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+/* Breakpoint	Class infix	Dimensions
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
 .main-section {
   background-image: linear-gradient(to right, rgba(234, 231, 220, 0.85), rgba(234, 231, 220, 0.85)), url(../img/pano_plant_2.jpg);
   background-size: cover;
@@ -8,48 +21,50 @@
   /*    max-width: 100%; */
   height: 100vh; }
   .main-section__content {
+    /* width: 120rem; */
     margin: 0 auto;
-    /* @media (max-width: $screen-width1080) { width: calc($screen-width1080 - 50px)}
-        @media (max-width: $screen-width768) { width: calc($screen-width768 - 50px)}
-        @media (max-width: $screen-width640) { width: calc($screen-width640 - 50px)}
-        @media (max-width: $screen-width414) { width: calc($screen-width414 - 50px)}
-        @media (max-width: $screen-width393) { width: calc($screen-width393 - 50px)}
-        @media (max-width: $screen-width360) { width: calc($screen-width360 - 50px)} */ }
-    @media (min-width: 1920px) {
+    /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+    /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+    /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+    /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+    /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+    /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */ }
+    @media (max-width: 1200px) {
       .main-section__content {
-        width: 1200px; } }
-    @media (max-width: 1920px) {
+        width: 900px; } }
+    @media (min-width: 1200px) {
       .main-section__content {
-        width: 1200px; } }
-    @media (max-width: 1536px) {
-      .main-section__content {
-        width: 1200px; } }
-    @media (max-width: 1440px) {
-      .main-section__content {
-        width: 1200px; } }
-    @media (max-width: 1366px) {
-      .main-section__content {
-        width: 1000px; } }
-    @media (max-width: 1080px) {
+        width: 900px; } }
+    @media (max-width: 992px) {
       .main-section__content {
         width: 700px; } }
     @media (max-width: 768px) {
       .main-section__content {
-        width: 600px; } }
-    @media (max-width: 640px) {
+        width: 500px; } }
+    @media (max-width: 576px) {
       .main-section__content {
-        width: 400px; } }
-    @media (max-width: 414px) {
-      .main-section__content {
-        width: 380px; } }
-    @media (max-width: 393px) {
-      .main-section__content {
-        width: 380px; } }
-    @media (max-width: 360px) {
+        width: 500px; } }
+    @media (max-width: 576px) {
       .main-section__content {
         width: 350px; } }
+    @media (max-width: 320px) {
+      .main-section__content {
+        width: 300px; } }
   .main-section__para {
-    box-sizing: content-box; }
+    box-sizing: content-box;
+    width: 100%; }
 
 /* Add the following CSS block to your own
 stylesheet. 
@@ -99,7 +114,46 @@ https://linearicons.com/free
   box-sizing: inherit; }
 
 html {
-  font-size: 50%; }
+  font-size: 50%;
+  /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+  /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+  /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+  /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+  /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */
+  /* @if $bp == $bp-1400 {
+        @media (max-width: 1400px) {@content};
+    }; */ }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 992px) {
+    html {
+      font-size: 30%; } }
+  @media (max-width: 768px) {
+    html {
+      font-size: 25%; } }
+  @media (max-width: 576px) {
+    html {
+      font-size: 25%; } }
+  @media (max-width: 576px) {
+    html {
+      font-size: 25%; } }
+  @media (max-width: 320px) {
+    html {
+      font-size: 25%; } }
 
 body {
   box-sizing: border-box; }
@@ -130,19 +184,18 @@ body {
   } */ }
   .heading-primary--main {
     display: block;
-    font-size: 5rem;
     font-weight: 500;
     letter-spacing: 1.5rem; }
   .heading-primary--sub {
     display: block;
-    font-size: 2.5rem;
     font-weight: 550;
     letter-spacing: 0.5rem; }
 
 .para__text {
   font-size: 2.5rem;
   font-weight: 400;
-  letter-spacing: 0.4rem; }
+  letter-spacing: 0.4rem;
+  box-sizing: border-box; }
 
 .u-center-text {
   text-align: center !important; }

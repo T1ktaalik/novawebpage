@@ -1,0 +1,200 @@
+@mixin responsive-width {
+
+    
+    @media (max-width: $sc-width320) {width: 300px};
+    @media (max-width: $sc-width480) {width: 300px};
+    
+    @media (max-width: $sc-width540) {width: 460px};
+    @media (max-width: $sc-width600) {width: 520px};
+    @media (max-width: $sc-width720) {width: 580px};
+    
+    @media (max-width: $sc-width800) {width: 700px};
+    @media (max-width: $sc-width900) {width: 780px};
+    @media (max-width: $sc-width1080) {width: 880px};
+
+    @media (max-width: $sc-width1200) {width: 1060px};
+    @media (max-width: $sc-width1366) {width: 1180px};
+    @media (min-width: $sc-width1366) {width: 1180px};
+}
+
+
+@mixin responsive-h1 {
+    @media (max-height: $sc-height480) {font-size: $fz-medium; color: goldenrod}
+    @media (max-height: $sc-height540) {font-size: $fz-medium; color: goldenrod}
+    
+    @media (max-height: $sc-height600) {font-size: $fz-large; color: blue}
+    @media (max-height: $sc-height720) {font-size: $fz-large; color: blue}
+    
+    @media (max-height: $sc-height800) {font-size: $fz-x-large; color: red}
+    @media (max-height: $sc-height854) {font-size: $fz-x-large; color: red}
+    @media (max-height: $sc-height900) {font-size: $fz-x-large; color: red}
+    @media (max-height: $sc-height960) {font-size: $fz-x-large; color: red}
+    
+    @media (max-height: $sc-height1024) {font-size: $fz-xx-large; color: green}
+    @media (max-height: $sc-height1080) {font-size: $fz-xx-large; color: green}
+    @media (max-height: $sc-height1200) {font-size: $fz-xx-large; color: green}
+} 
+
+/* .demo-xx-small {
+  font-size: xx-small;
+}
+.demo-x-small {
+  font-size: x-small;
+}
+.demo-small {
+  font-size: small;
+}
+.demo-medium {
+  font-size: medium;
+}
+.demo-large {
+  font-size: large;
+}
+.demo-x-large {
+  font-size: x-large;
+}
+.demo-xx-large {
+  font-size: xx-large;
+}
+ */
+
+ 
+$fz-xx-small: xx-small;
+$fz-x-small: x-small;
+$fz-small: small;
+$fz-medium: medium;
+$fz-large: large;
+$fz-x-large: x-large;
+$fz-xx-large: xx-large;
+//SCREEN RESOLUTIONS
+$sc-width320: 320px; 
+$sc-width480: 480px;
+$sc-width540: 540px;
+$sc-width600: 600px;
+$sc-width720: 720px;
+$sc-width800: 800px;
+$sc-width900: 900px;
+$sc-width1080: 1080px;
+$sc-width1200: 1200px;
+$sc-width1366: 1366px;
+$sc-width1440: 1440px;
+$sc-width1600: 1600px;
+
+$sc-height480: 480px;
+$sc-height540: 540px;
+$sc-height600: 600px;
+$sc-height720: 720px;
+$sc-height800: 800px;
+$sc-height854: 854px;
+$sc-height900: 900px;
+$sc-height960: 960px;
+$sc-height1024: 1024px;
+$sc-height1080: 1080px;
+$sc-height1200: 1200px;
+
+//WIDTH BREAKPOINTDS
+/* 320
+480
+540
+600
+720
+800
+900
+1080
+1200
+1366
+1440
+1600 */
+
+//HEIGHT
+/* 480
+540
+600
+720
+800
+854
+900
+960
+1024
+1080
+1200
+ */
+
+
+
+
+
+
+
+
+// SCREEN SIZES
+/* width	height
+320	480
+480	800
+480	854
+540	960
+600	800
+600	1024
+640	960
+640	1136
+720	720
+720	1280
+750	1334
+768	1024
+768	1280
+768	1366
+800	480
+800	1280
+828	1792
+854	480
+900	1600
+960	540
+1024	600
+1080	1920
+1080	2280
+1080	2310
+1080	2340
+1080	2400
+1125	2436
+1170	2532
+1170	2532
+1200	1920
+1242	2688
+1280	720
+1280	768
+1280	800
+1284	2778
+1366	768
+1440	900
+1440	1440
+1440	2560
+1440	3040
+1440	3088
+1440	3200
+1536	2048
+1600	900
+1600	1200
+1680	1050
+1920	1080
+1920	1200
+1921	1080
+2048	1536
+2160	1440
+2160	1620
+2160	3840
+2160	4096
+2224	1668
+2304	1440
+2360	1640
+2388	1668
+2560	1440
+2560	1600
+2560	1700
+2732	2048
+2736	1824
+2880	1800
+2960	1440
+3000	2000
+3840	2160
+4096	2304
+5120	2880 */

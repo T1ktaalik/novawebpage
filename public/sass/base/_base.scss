@@ -10,6 +10,24 @@
 html {
   // This defines what 1rem is
   font-size: 50%;
+  @include res-width($bp-1200) {
+    font-size: 50%;
+  };
+  @include res-width($bp-992) {
+    font-size: 30%;
+  };
+  @include res-width($bp-768) {
+    font-size: 25%;
+  };
+  @include res-width($bp-576) {
+    font-size: 25%;
+  };
+  @include res-width($bp-576) {
+    font-size: 25%;
+  };
+  @include res-width($bp-320) {
+    font-size: 25%;
+  };
 }
 
 body {
